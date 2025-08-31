@@ -1,0 +1,20 @@
+/* larger.css — contains media query for wider screens */
+@media (min-width: 720px){
+  .menu{display:none}
+  .nav{display:block}
+  .nav ul{flex-direction:row}
+  .nav a{padding:.6rem .85rem}
+
+  main{padding: 2rem 1.25rem}
+  .panel{padding:1.25rem 1.1rem}
+
+  .course-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px){
+  .course-grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
