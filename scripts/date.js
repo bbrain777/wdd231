@@ -1,4 +1,3 @@
-// date.js — footer owner + formatted last modified (UK format)
 const ownerName = "Olakunle Obademi";
 const ownerLocation = "Stockton-on-Tees, United Kingdom";
 
@@ -12,7 +11,6 @@ yearSpan.textContent = `© ${now.getFullYear()}`;
 ownerSpan.textContent = ownerName;
 locSpan.textContent = ownerLocation;
 
-// Format document.lastModified as DD/MM/YYYY HH:MM:SS (UK-style)
 function formatLastMod(s){
   const d = new Date(s);
   const pad = (n) => String(n).padStart(2,'0');

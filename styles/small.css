@@ -1,4 +1,4 @@
-/* small.css — mobile-first base styles with animated cards */
+/* small.css — audit-optimized, mobile-first styles with inline SVG control */
 :root{
   --bg: #0f172a;
   --panel: #0b1323;
@@ -73,6 +73,14 @@ h2{font-size: clamp(1.15rem, 2vw, 1.5rem); margin:.25rem 0 .75rem}
   box-shadow: 0 10px 30px rgba(2,6,23,.2);
 }
 
+/* INLINE SVG control for icons */
+.ico, .ico-s{ display:block }
+.ico{ width:20px; height:20px; stroke: var(--text); fill: var(--text) }
+.ico path, .ico rect, .ico circle{ stroke: var(--text) }
+.ico-s{ width:14px; height:14px; stroke: var(--text); fill: var(--text) }
+.icon-link .ico{ width:20px; height:20px }
+.icon-link:hover .ico{ stroke: var(--accent); fill: var(--accent) }
+
 /* Animated filter cards */
 .filter-cards{
   display:grid;
@@ -89,7 +97,6 @@ h2{font-size: clamp(1.15rem, 2vw, 1.5rem); margin:.25rem 0 .75rem}
   box-shadow: 0 10px 20px rgba(2,6,23,.18), inset 0 0 0 0 rgba(56,189,248,.0);
   transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease;
 }
-.card-btn i{font-size:1.1rem}
 .card-btn:hover{
   transform: translateY(-2px) scale(1.02);
   border-color: rgba(56,189,248,.4);
@@ -126,8 +133,8 @@ h2{font-size: clamp(1.15rem, 2vw, 1.5rem); margin:.25rem 0 .75rem}
 .course:hover{transform: translateY(-1px); border-color: rgba(56,189,248,.35)}
 .course h3{margin:.25rem 0 .25rem; font-size:1.05rem}
 .course .meta{display:flex; gap:.5rem; flex-wrap:wrap; color: var(--muted); font-size:.95rem}
-.badge.wdd{background: rgba(99,102,241,.12)}  /* indigo */
-.badge.cse{background: rgba(34,197,94,.12)}  /* green  */
+.badge.wdd{background: rgba(99,102,241,.12)}
+.badge.cse{background: rgba(34,197,94,.12)}
 
 .credits{margin-top:.75rem; font-size:1.05rem}
 
@@ -140,7 +147,6 @@ h2{font-size: clamp(1.15rem, 2vw, 1.5rem); margin:.25rem 0 .75rem}
 .icon-link{display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px;
   border-radius:999px; border:1px solid rgba(148,163,184,.25); margin:.25rem; color: var(--text)}
 .icon-link:hover{color: var(--accent); border-color: rgba(56,189,248,.5)}
-.icon-link i{font-size:1.1rem}
 .footline{margin:.25rem 0 .35rem}
 
 @media (prefers-reduced-motion: reduce){

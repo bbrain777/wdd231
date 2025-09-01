@@ -1,4 +1,3 @@
-// navigation.js — hamburger + wayfinding
 const menuBtn = document.getElementById('menu');
 const nav = document.getElementById('primary-nav');
 
