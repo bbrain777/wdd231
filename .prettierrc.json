@@ -1,0 +1,19 @@
+{
+  "htmlWhitespaceSensitivity": "ignore",
+  "bracketSameLine": false,
+  "singleAttributePerLine": false,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "singleQuote": false,
+        "jsxSingleQuote": false,
+        "bracketSpacing": true,
+        "parser": "html",
+        "printWidth": 100,
+        "proseWrap": "preserve",
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
