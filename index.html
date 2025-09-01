@@ -1,63 +1,86 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WDD 231 · Course Home | Olakunle Obademi</title>
-  <meta name="description"
-    content="WDD 231 Course Home page demonstrating responsive layout, accessibility, and dynamic JavaScript features.">
+  <title>WDD 231 · Course Home — Olakunle Obademi</title>
+  <meta name="description" content="WDD 231 course home page for Olakunle Obademi — responsive, accessible frontend with animated filter cards, dynamic course list, and credits total.">
   <meta name="author" content="Olakunle Obademi">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social + filter icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <script defer src="scripts/navigation.js"></script>
   <script defer src="scripts/date.js"></script>
   <script defer src="scripts/courses.js"></script>
 </head>
-
 <body>
   <header class="site-header">
     <a class="brand" href="./" aria-label="Home">
-      <img src="images/logo.svg" alt="" width="40" height="40">
+      <img src="images/logo.svg" alt="WDD 231 Course logo — Olakunle Obademi" width="40" height="40">
       <span class="brand-text">Olakunle Obademi</span>
     </a>
 
     <button id="menu" class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
-      <!-- hamburger icon -->
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
 
     <nav id="primary-nav" class="nav" aria-label="Primary">
       <ul>
         <li><a href="./" data-nav="home">Home</a></li>
-        <li><a href="https://your-github-username.github.io/wdd231/chamber/" data-nav="chamber">Chamber</a></li>
-        <li><a href="https://your-github-username.github.io/wdd231/final/" data-nav="final">Final</a></li>
+        <li><a href="./chamber/index.html" data-nav="chamber">Chamber</a></li>
+        <li><a href="./final/index.html" data-nav="final">Final</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main-content">
-    <h1>Home</h1>
-
-    <section class="panel" aria-labelledby="welcome-heading">
-      <h2 id="welcome-heading">Welcome</h2>
-      <p>This page is the WDD 231 Course Home. It showcases a responsive layout, accessible navigation, and dynamic
-        content built with vanilla HTML, CSS, and JavaScript. Resize the window or use DevTools to test from 320px
-        upward.</p>
-    </section>
+    <h1>WDD 231 · Course Home — Olakunle Obademi</h1>
 
     <section class="panel" aria-labelledby="certificate-heading">
       <h2 id="certificate-heading">Certificate: Web &amp; Computer Programming</h2>
 
-      <div class="filters" role="group" aria-label="Filter courses">
-        <button class="filter active" data-filter="all">All Courses</button>
-        <button class="filter" data-filter="wdd">WDD Courses</button>
-        <button class="filter" data-filter="cse">CSE Courses</button>
+      <!-- Animated filter cards -->
+      <div class="filter-cards" role="group" aria-label="Filter courses">
+        <button class="card-btn" data-filter="all" aria-pressed="true">
+          <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+          <span>All Courses</span>
+        </button>
+        <button class="card-btn" data-filter="wdd" aria-pressed="false">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <span>WDD Courses</span>
+        </button>
+        <button class="card-btn" data-filter="cse" aria-pressed="false">
+          <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+          <span>CSE Courses</span>
+        </button>
+        <button class="card-btn" data-filter="completed" aria-pressed="false">
+          <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+          <span>Completed</span>
+        </button>
+        <button class="card-btn" data-filter="inprogress" aria-pressed="false">
+          <i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>
+          <span>In Progress</span>
+        </button>
       </div>
 
+      <!-- Status key -->
+      <div class="status-key">
+        <span class="badge completed"><i class="fa-solid fa-circle-check"></i> Completed</span>
+        <span class="badge inprogress"><i class="fa-solid fa-hourglass-half"></i> In Progress</span>
+      </div>
+
+      <!-- Featured course block -->
+      <article class="featured">
+        <h3>CSE 111 — Programming with Functions</h3>
+        <p><strong>Credits:</strong> 2</p>
+        <p><strong>Status:</strong> <span class="badge completed up">COMPLETED</span></p>
+      </article>
+
+      <!-- Dynamic list -->
       <div id="courses" class="course-grid" aria-live="polite"></div>
 
       <p class="credits"><strong>Total Credits:</strong> <span id="credit-total">0</span></p>
@@ -66,48 +89,36 @@
     <section class="panel" aria-labelledby="resources-heading">
       <h2 id="resources-heading">Resources</h2>
       <ul class="resource-list">
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN HTML
-            Reference</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">MDN CSS
-            Reference</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">MDN
-            JavaScript Reference</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN HTML Reference</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">MDN CSS Reference</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">MDN JavaScript Reference</a></li>
       </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p class="social">
-      <a class="icon-link" href="https://github.com/bbrain777/wdd231" target="_blank" rel="noopener"
-        aria-label="GitHub Repository">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.25 3.41 9.7 8.15 11.27.6.12.82-.26.82-.58 0-.29-.01-1.06-.02-2.07-3.31.73-4.01-1.6-4.01-1.6-.55-1.43-1.35-1.8-1.35-1.8-1.1-.77.08-.76.08-.76 1.22.09 1.87 1.27 1.87 1.27 1.08 1.85 2.82 1.32 3.5 1.01.11-.79.42-1.32.77-1.62-2.64-.31-5.41-1.36-5.41-6.05 0-1.34.46-2.44 1.22-3.3-.12-.31-.53-1.55.12-3.22 0 0 1.01-.33 3.31 1.26a11.3 11.3 0 0 1 6.02 0c2.3-1.59 3.31-1.26 3.31-1.26.65 1.67.25 2.91.12 3.22.76.86 1.22 1.96 1.22 3.3 0 4.71-2.78 5.73-5.43 6.03.43.37.82 1.1.82 2.23 0 1.61-.02 2.91-.02 3.31 0 .32.21.7.83.58A11.5 11.5 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5Z" />
-        </svg>
-      </a>
-      <a class="icon-link" href="https://www.linkedin.com/in/tayo-o-obademi-042147101" target="_blank" rel="noopener"
-        aria-label="LinkedIn Profile">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 23.5h4V7.5h-4v16zM8.5 7.5h3.84v2.18h.05c.54-1.03 1.86-2.12 3.84-2.12 4.11 0 4.87 2.7 4.87 6.2v9.74h-4v-8.63c0-2.06-.04-4.72-2.88-4.72-2.88 0-3.32 2.25-3.32 4.57v8.78h-4V7.5z" />
-        </svg>
-      </a>
-      <a class="icon-link" href="https://x.com/omega_28254" target="_blank" rel="noopener" aria-label="X/Twitter">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M18.244 2.25h3.338l-7.29 8.332 8.556 11.168h-6.708l-5.244-6.858-6.002 6.858H1.556l7.804-8.91L1.083 2.25H8l4.73 6.232 5.514-6.232Z" />
-        </svg>
-      </a>
-    </p>
-
-    <p id="signature">
+    <p class="footline">
       <span id="copyright"></span>
-      <span id="owner"></span> · <span id="location"></span>
+      <span id="owner"></span> — <span id="location"></span>
     </p>
     <p id="lastModified"></p>
+
+    <nav class="social" aria-label="Social links">
+      <a class="icon-link" href="https://www.linkedin.com/in/tayo-o-obademi-042147101" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a class="icon-link" href="https://www.facebook.com/obaolakunle" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a class="icon-link" href="https://www.zionyouths.org" target="_blank" rel="noopener" aria-label="Zion Youth Development Initiative">
+        <i class="fa-solid fa-globe"></i>
+      </a>
+      <a class="icon-link" href="https://x.com/omega_28254" target="_blank" rel="noopener" aria-label="X / Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </nav>
   </footer>
 
   <a class="skip-link" href="#main-content">Skip to content</a>
 </body>
-
 </html>

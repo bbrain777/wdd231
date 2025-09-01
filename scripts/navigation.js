@@ -1,4 +1,4 @@
-// navigation.js — responsive hamburger + wayfinding
+// navigation.js — hamburger + wayfinding
 const menuBtn = document.getElementById('menu');
 const nav = document.getElementById('primary-nav');
 
@@ -7,7 +7,6 @@ menuBtn?.addEventListener('click', () => {
   menuBtn.setAttribute('aria-expanded', String(isOpen));
 });
 
-// Close nav when clicking a link (small view)
 nav?.addEventListener('click', (e) => {
   const link = e.target.closest('a');
   if(link && nav.classList.contains('open')){
@@ -16,7 +15,6 @@ nav?.addEventListener('click', (e) => {
   }
 });
 
-// Wayfinding: mark current page link active
 const links = nav?.querySelectorAll('a') ?? [];
 const here = location.pathname.replace(/\/index\.html$/,'/');
 links.forEach(a => {
