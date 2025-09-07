@@ -1,0 +1,28 @@
+{
+  "familyName": "Obademi",
+  "movedInDate": "2024-08-15",
+  "familyCount": 4,
+  "visitedByBishopric": true,
+  "members": [
+    {
+      "name": "Olakunle Obademi",
+      "gender": "male",
+      "birthdate": "1989-02-17"
+    },
+    {
+      "name": "Sodiq Soyinka",
+      "gender": "male",
+      "birthdate": "1990-06-04"
+    },
+    {
+      "name": "Temiloluwa Obademi",
+      "gender": "male",
+      "birthdate": "2015-03-21"
+    },
+    {
+      "name": "Foladele Testimony",
+      "gender": "female",
+      "birthdate": "2018-11-12"
+    }
+  ]
+}

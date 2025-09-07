@@ -1,4 +1,4 @@
-// Mobile menu toggle
+// Mobile nav toggle (if present)
 const menuBtn = document.getElementById('menu');
 const nav = document.getElementById('primary-nav');
 
@@ -7,15 +7,7 @@ menuBtn?.addEventListener('click', () => {
   menuBtn.setAttribute('aria-expanded', String(isOpen));
 });
 
-nav?.addEventListener('click', (e) => {
-  const link = e.target.closest('a');
-  if (link && nav.classList.contains('open')) {
-    nav.classList.remove('open');
-    menuBtn.setAttribute('aria-expanded', 'false');
-  }
-});
-
-// ---- Wayfinding (active link) ----
+// Wayfinding: resolve href relative to location.href (GitHub Pages subfolder safe)
 function normalizePath(pathname) {
   let p = pathname.replace(/\/index\.html?$/i, '/');
   p = p.replace(/\/{2,}/g, '/');
@@ -27,22 +19,13 @@ const base = location.href;
 const currentPath = normalizePath(location.pathname);
 const links = nav?.querySelectorAll('a[href]') ?? [];
 
-links.forEach((a) => {
+links.forEach(a => {
   try {
     const href = a.getAttribute('href');
-    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
-      a.classList.remove('active');
-      a.removeAttribute('aria-current');
-      return;
-    }
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
     const url = new URL(href, base);
-    if (url.origin !== location.origin) {
-      a.classList.remove('active');
-      a.removeAttribute('aria-current');
-      return;
-    }
+    if (url.origin !== location.origin) return;
     const targetPath = normalizePath(url.pathname);
-
     if (targetPath === currentPath) {
       a.classList.add('active');
       a.setAttribute('aria-current', 'page');
@@ -50,8 +33,5 @@ links.forEach((a) => {
       a.classList.remove('active');
       a.removeAttribute('aria-current');
     }
-  } catch {
-    a.classList.remove('active');
-    a.removeAttribute('aria-current');
-  }
+  } catch {}
 });

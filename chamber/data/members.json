@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tees Tech Repairs",
+    "address": "12 High St, Stockton-on-Tees TS18",
+    "phone": "+44 1642 000000",
+    "url": "https://example-repairs.co.uk",
+    "image": "tees-tech.png",
+    "membership": 3,
+    "category": "Technology"
+  },
+  {
+    "name": "Thornaby Coffee House",
+    "address": "5 Mandale Rd, Thornaby TS17",
+    "phone": "+44 1642 111111",
+    "url": "https://example-coffee.co.uk",
+    "image": "coffee.png",
+    "membership": 2,
+    "category": "Food & Drink"
+  },
+  {
+    "name": "River Wear Fitness",
+    "address": "Unit 3 Business Park, Stockton",
+    "phone": "+44 1642 222222",
+    "url": "https://example-fitness.co.uk",
+    "image": "fitness.png",
+    "membership": 1,
+    "category": "Health"
+  },
+  {
+    "name": "Teesside Web Studio",
+    "address": "Dockside, Middlesbrough",
+    "phone": "+44 1642 333333",
+    "url": "https://example-web.co.uk",
+    "image": "webstudio.png",
+    "membership": 3,
+    "category": "Technology"
+  },
+  {
+    "name": "Stockton Books & Gifts",
+    "address": "Market St, Stockton-on-Tees",
+    "phone": "+44 1642 444444",
+    "url": "https://example-books.co.uk",
+    "image": "books.png",
+    "membership": 2,
+    "category": "Retail"
+  },
+  {
+    "name": "Thornaby Florals",
+    "address": "Town Centre, Thornaby",
+    "phone": "+44 1642 555555",
+    "url": "https://example-flowers.co.uk",
+    "image": "flowers.png",
+    "membership": 1,
+    "category": "Retail"
+  },
+  {
+    "name": "Tees Accounting Ltd",
+    "address": "Business Village, Stockton",
+    "phone": "+44 1642 666666",
+    "url": "https://example-accounts.co.uk",
+    "image": "accounts.png",
+    "membership": 3,
+    "category": "Professional Services"
+  }
+]

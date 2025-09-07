@@ -1,0 +1,8 @@
+:root { --gap: 1rem; }
+body { font-family: system-ui, sans-serif; margin: 0; padding: 0 1rem 2rem; background:#fff; color:#0f172a;}
+header, footer { text-align: center; margin: 1rem 0; }
+#cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--gap); }
+#cards section { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+#cards h2 { margin: 0 0 .5rem; font-size: 1.1rem; }
+#cards img { width: 100%; height: auto; border-radius: 10px; display: block; }
+small { color: #475569; display:block; margin-top:.5rem; }
