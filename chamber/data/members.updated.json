@@ -2,7 +2,7 @@
   "members": [
     {
       "name": "Tees Tech",
-      "address": "123 High St, Thornaby TS17",
+      "address": "123 High St",
       "phone": "01642 123456",
       "website": "https://example.com/tees-tech",
       "image": "tees-tech.png",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Stockton Coffee",
-      "address": "45 Riverside, Stockton-on-Tees TS18",
+      "address": "45 Riverside",
       "phone": "01642 654321",
       "website": "https://example.com/coffee",
       "image": "coffee.png",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Fitness Hub",
-      "address": "78 Gym Rd, Stockton TS18",
+      "address": "78 Gym Rd",
       "phone": "01642 987654",
       "website": "https://example.com/fitness",
       "image": "fitness.png",
@@ -26,15 +26,15 @@
     },
     {
       "name": "Bloom Florist",
-      "address": "12 Garden Ln, Stockton TS19",
-      "phone": "01642 246810",
+      "address": "9 Flower Ln",
+      "phone": "01642 112233",
       "website": "https://example.com/flowers",
       "image": "flowers.png",
       "membership": "Silver"
     },
     {
       "name": "Book Haven",
-      "address": "9 Library St, Thornaby TS17",
+      "address": "21 Library St",
       "phone": "01642 445566",
       "website": "https://example.com/books",
       "image": "books.png",
@@ -42,7 +42,7 @@
     },
     {
       "name": "AccountEase",
-      "address": "5 Ledger Ave, Stockton TS18",
+      "address": "5 Ledger Ave",
       "phone": "01642 778899",
       "website": "https://example.com/accounts",
       "image": "accounts.png",
@@ -50,7 +50,7 @@
     },
     {
       "name": "WebStudio",
-      "address": "33 Code Way, Thornaby TS17",
+      "address": "33 Code Way",
       "phone": "01642 334455",
       "website": "https://example.com/webstudio",
       "image": "webstudio.png",
