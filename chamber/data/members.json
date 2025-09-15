@@ -4,43 +4,50 @@
       "name": "Tees Tech",
       "address": "123 High St",
       "phone": "01642 123456",
-      "website": "https://example.com/tees-tech"
+      "website": "https://example.com/tees-tech",
+      "level": 3
     },
     {
       "name": "Stockton Coffee",
       "address": "45 Riverside",
       "phone": "01642 654321",
-      "website": "https://example.com/coffee"
+      "website": "https://example.com/coffee",
+      "level": 2
     },
     {
       "name": "Fitness Hub",
       "address": "78 Gym Rd",
       "phone": "01642 987654",
-      "website": "https://example.com/fitness"
+      "website": "https://example.com/fitness",
+      "level": 1
     },
     {
       "name": "Bloom Florist",
       "address": "9 Flower Ln",
       "phone": "01642 112233",
-      "website": "https://example.com/flowers"
+      "website": "https://example.com/flowers",
+      "level": 1
     },
     {
       "name": "Book Haven",
       "address": "21 Library St",
       "phone": "01642 445566",
-      "website": "https://example.com/books"
+      "website": "https://example.com/books",
+      "level": 2
     },
     {
       "name": "AccountEase",
       "address": "5 Ledger Ave",
       "phone": "01642 778899",
-      "website": "https://example.com/accounts"
+      "website": "https://example.com/accounts",
+      "level": 1
     },
     {
       "name": "WebStudio",
       "address": "33 Code Way",
       "phone": "01642 334455",
-      "website": "https://example.com/webstudio"
+      "website": "https://example.com/webstudio",
+      "level": 3
     }
   ]
 }

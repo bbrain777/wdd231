@@ -1,5 +1,1 @@
-
-document.addEventListener('DOMContentLoaded',()=>{
-  const y=document.querySelector('#year'); if(y) y.textContent=new Date().getFullYear();
-  const lm=document.querySelector('#lastModified'); if(lm) lm.textContent=document.lastModified;
-});
+document.addEventListener('DOMContentLoaded',()=>{const y=document.querySelector('#year');if(y)y.textContent=new Date().getFullYear();const lm=document.querySelector('#lastModified');if(lm)lm.textContent=document.lastModified;});

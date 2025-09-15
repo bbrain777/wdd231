@@ -1,0 +1,1 @@
+export function setSectionSelection(sections){const sel=document.querySelector('#sectionNumber');sel.innerHTML=sections.map(s=>`<option value="${s.sectionNum}">${s.sectionNum} — ${s.days} ${s.time}</option>`).join('');}
