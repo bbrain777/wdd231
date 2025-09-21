@@ -22,7 +22,7 @@
   <header class="site-header">
     <nav aria-label="Primary">
       <ul class="nav">
-        <li><a href="home.html" aria-current="page">Home</a></li>
+        <li><a href="home.html" aria-current="page" aria-current="page">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="join.html">Join</a></li>
@@ -35,8 +35,9 @@
       <div class="hero__content">
         <h2 id="hero-title">Grow Together. Thrive Locally.</h2>
         <p>We connect businesses, promote local growth, and serve our community with events, training, and networking.</p>
+        <a class="btn cta" href="join.html">Join the Chamber</a>
         <div class="hero__cta">
-          <a class="btn" href="join.html">Join the Chamber</a>
+          
           <a class="btn btn--ghost" href="directory.html">View Directory</a>
         </div>
       </div>
@@ -61,6 +62,16 @@
         <li><article class="event"><h3>Small Business Grants Workshop</h3><p><time datetime="2025-09-28">28 Sep</time> • 6:00 PM • Library Annex</p></article></li>
       </ul>
     </section>
+  
+    <section id="weather" aria-labelledby="weather-title" class="card">
+      <h2 id="weather-title">Local Weather</h2>
+      <div class="weather__current">
+        <p><strong>Now:</strong> <span id="weather-temp">--</span>°C — <span id="weather-desc">Loading…</span></p>
+      </div>
+      <div class="weather__forecast" id="weather-forecast" aria-label="Three day forecast"></div>
+      <p class="weather__note" id="weather-note" hidden>Weather data unavailable.</p>
+    </section>
+    
   </main>
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Olakunle Obademi • WDD 231</p>
@@ -68,5 +79,6 @@
   </footer>
   <script src="scripts/nav.js" defer></script>
   <script src="scripts/home.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
 </body>
 </html>
