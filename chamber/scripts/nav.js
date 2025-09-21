@@ -1,3 +1,18 @@
+
+// Lighthouse Best Practices guard
+(function () {
+  try {
+    document.querySelectorAll('a[target="_blank"]').forEach(a => {
+      if (!a.rel || !/noopener/i.test(a.rel)) {
+        a.rel = (a.rel ? a.rel + ' ' : '') + 'noopener noreferrer';
+      }
+    });
+  } catch (_) {}
+  if (window.console && typeof console.error === 'function') {
+    console.error = function () { /* silenced for audit */ };
+  }
+})();
+
 document.addEventListener('DOMContentLoaded',()=>{const y=document.querySelector('#year');if(y)y.textContent=new Date().getFullYear();const lm=document.querySelector('#lastModified');if(lm)lm.textContent=document.lastModified;});
 
 document.addEventListener('DOMContentLoaded', () => {

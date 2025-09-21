@@ -44,7 +44,7 @@ function renderForecast(days) {
     const temp = Math.round(d.main?.temp ?? 0);
     card.innerHTML = `
       <div class="forecast-date">${label}</div>
-      <img alt="${desc}" src="https://openweathermap.org/img/wn/${icon}@2x.png" width="50" height="50" loading="lazy">
+      <img alt="${desc}" src="https://openweathermap.org/img/wn/${icon}@2x.png" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" width="50" height="50" loading="lazy">
       <div class="forecast-temp">${temp}°C</div>
       <div class="forecast-desc">${desc}</div>
     `;
@@ -57,8 +57,8 @@ function renderForecast(days) {
     // current
     const currentURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&units=metric&appid=${OWM_KEY}`;
     const cur = await fetchJSON(currentURL);
-    var __wt=document.getElementById('weather-temp'); if(__wt) __wt.textContent = Math.round(cur.main.temp);
-    var __wd=document.getElementById('weather-desc'); if(__wd) __wd.textContent = cur.weather?.[0]?.description ?? '';
+    document.getElementById('weather-temp').textContent = Math.round(cur.main.temp);
+    document.getElementById('weather-desc').textContent = cur.weather?.[0]?.description ?? '';
 
     // forecast (next 3 days from tomorrow)
     const fcURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&units=metric&appid=${OWM_KEY}`;
@@ -70,7 +70,7 @@ function renderForecast(days) {
     const picks = futureKeys.map(k => pickNoon(grouped[k]));
     renderForecast(picks);
   } catch (err) {
-    console.warn('Weather error', err);
+    console.error('Weather error', err);
     const note = document.getElementById('weather-note');
     if (note) note.hidden = false;
   }
