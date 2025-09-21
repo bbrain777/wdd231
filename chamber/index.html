@@ -9,11 +9,12 @@
   <meta property="og:title" content="Thornaby & Stockton Chamber — Home">
   <meta property="og:description" content="Connect with local businesses, events, and opportunities in Thornaby & Stockton.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bbrain777.github.io/wdd231/chamber/home.html">
+  <meta property="og:url" content="https://bbrain777.github.io/wdd231/chamber/">
   <meta property="og:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-cover.png">
   <link rel="icon" href="images/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/chamber.css">
@@ -22,7 +23,8 @@
   <header class="site-header">
     <nav aria-label="Primary">
       <ul class="nav">
-        <li><a href="home.html" aria-current="page" aria-current="page">Home</a></li>
+        <!-- Removed hard-coded aria-current to avoid duplicate; JS will handle highlighting -->
+        <li><a href="home.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="join.html">Join</a></li>
@@ -36,10 +38,7 @@
         <h2 id="hero-title">Grow Together. Thrive Locally.</h2>
         <p>We connect businesses, promote local growth, and serve our community with events, training, and networking.</p>
         <a class="btn cta" href="join.html">Join the Chamber</a>
-        <div class="hero__cta">
-          
-          <a class="btn btn--ghost" href="directory.html">View Directory</a>
-        </div>
+        <a class="btn btn--ghost" href="directory.html">View Directory</a>
       </div>
       <img class="hero__img" src="images/og-cover.png" width="600" height="315" alt="Collage of local Thornaby & Stockton business life">
     </section>
@@ -65,11 +64,9 @@
   
     <section id="weather" aria-labelledby="weather-title" class="card">
       <h2 id="weather-title">Local Weather</h2>
-      <div class="weather__current">
-        <p><strong>Now:</strong> <span id="weather-temp">--</span>°C — <span id="weather-desc">Loading…</span></p>
-      </div>
-      <div class="weather__forecast" id="weather-forecast" aria-label="Three day forecast"></div>
-      <p class="weather__note" id="weather-note" hidden>Weather data unavailable.</p>
+      <div><strong>Now:</strong> <span id="weather-temp">--</span>°C — <span id="weather-desc">Loading…</span></div>
+      <!-- Removed aria-label (redundant); tied to heading instead -->
+      <div class="weather__forecast" id="weather-forecast" aria-labelledby="weather-title"></div>
     </section>
     
   </main>
