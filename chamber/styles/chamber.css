@@ -28,3 +28,48 @@
 body{color:var(--text);background:var(--bg)}
 a{color:#0F766E}
 small,.muted{color:var(--muted)}
+
+/* === Contrast Fix Overrides (Week 3) ==============================
+   These overrides increase color contrast to pass WCAG AA without
+   altering layout or interaction.
+================================================================== */
+
+/* Safer link colors (AA on white/light backgrounds) */
+a, .link { color: #075985; }
+a:visited { color: #0c4a6e; }
+a:hover, a:focus-visible { text-decoration: underline; }
+
+/* Ensure muted text remains AA on light backgrounds */
+.muted, small { color: #334155; }
+
+/* Buttons: enforce AA contrast for common selectors */
+.btn, .button, button, input[type="submit"] {
+  /* fallback for generic buttons if color not explicitly set */
+  color: #111; 
+}
+
+/* Primary button variant with solid brand background */
+.btn--primary, .button--primary {
+  background-color: #0F766E; /* passes AA with white text */
+  color: #ffffff;
+}
+
+/* Accent CTA with dark text for contrast */
+.btn--accent, .button--accent, .hero .btn.cta {
+  background-color: #F59E0B;
+  color: #111111;
+}
+
+/* Hero overlay to guarantee readable text over images */
+.hero { position: relative; }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.60), rgba(0,0,0,.35));
+}
+.hero__content { position: relative; z-index: 1; color: #ffffff; }
+
+/* Footer contrast on light background */
+.site-footer { background: #f8fafc; color: #0f172a; }
+.site-footer a { color: #075985; }

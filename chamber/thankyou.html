@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You • Chamber</title>
+  <meta name="description" content="Thank you for applying to join the Chamber of Commerce." />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Chamber</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <h1>Thank You!</h1>
+    <p class="lede">We received your membership application. A confirmation has been generated below.</p>
+
+    <section class="card">
+      <h2>Submission Details</h2>
+      <dl class="kv" id="submission-details"></dl>
+      <p><a class="btn-primary" href="join.html">Submit another application</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Chamber</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const params = new URLSearchParams(window.location.search);
+    const required = [
+      ['First Name', 'firstName'],
+      ['Last Name', 'lastName'],
+      ['Email', 'email'],
+      ['Mobile', 'mobile'],
+      ['Business / Organization', 'organization'],
+      ['Submitted At', 'timestamp'],
+    ];
+    const optional = [
+      ['Membership Level', 'membership'],
+      ['Organizational Title', 'orgTitle'],
+      ['Organization Description', 'orgDescription'],
+    ];
+    const dl = document.getElementById('submission-details');
+    function addRow(label, value) {
+      const dt = document.createElement('dt');
+      dt.textContent = label;
+      const dd = document.createElement('dd');
+      dd.textContent = value || '—';
+      dl.append(dt, dd);
+    }
+    required.forEach(([label, key]) => addRow(label, params.get(key)));
+    optional.forEach(([label, key]) => {
+      const val = params.get(key);
+      if (val && val.trim() !== '') addRow(label, val);
+    });
+  </script>
+</body>
+</html>

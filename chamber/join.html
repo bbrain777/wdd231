@@ -1,43 +1,164 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Thornaby & Stockton Chamber of Commerce — Join</title>
-  <meta name="description" content="Join the Thornaby & Stockton Chamber.">
-  <meta name="author" content="Olakunle Obademi">
-  <meta property="og:title" content="Thornaby & Stockton Chamber — Join">
-  <meta property="og:description" content="Join the Thornaby & Stockton Chamber.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bbrain777.github.io/wdd231/chamber/join.html">
-  <meta property="og:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-cover.png">
-  <link rel="icon" href="images/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/chamber.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join • Chamber</title>
+  <meta name="description" content="Apply to join the Chamber of Commerce." />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/join.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav aria-label="Primary">
-      <ul class="nav">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="join.html" aria-current="page">Join</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">Chamber</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" aria-current="page">Join</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-  <main>
+
+  <main id="main" class="wrap">
     <h1>Join the Chamber</h1>
-    <p>Membership benefits and application will be available here.</p>
+    <p class="lede">Complete the application to become a member. Required fields are marked with <span aria-hidden="true">*</span><span class="sr-only">required</span>.</p>
+
+    <section class="join-layout" aria-labelledby="form-heading">
+      <form id="join-form" class="card" method="get" action="thankyou.html" novalidate>
+        <h2 id="form-heading">Membership Application</h2>
+
+        <label title="Enter your given name">
+          First Name <span aria-hidden="true">*</span>
+          <input type="text" name="firstName" id="firstName" required autocomplete="given-name" inputmode="text" />
+        </label>
+
+        <label title="Enter your family name">
+          Last Name <span aria-hidden="true">*</span>
+          <input type="text" name="lastName" id="lastName" required autocomplete="family-name" inputmode="text" />
+        </label>
+
+        <label title="Your role or title in your organization (letters, hyphens, spaces; min 7 characters)">
+          Organizational Title
+          <input type="text" name="orgTitle" id="orgTitle" autocomplete="organization-title"
+                 pattern="[A-Za-z\-\s]{7,}" placeholder="e.g., Operations Lead" />
+        </label>
+
+        <label title="Enter a valid email address">
+          Email <span aria-hidden="true">*</span>
+          <input type="email" name="email" id="email" required autocomplete="email" placeholder="name@example.com" />
+        </label>
+
+        <label title="Enter your mobile phone number">
+          Mobile Number <span aria-hidden="true">*</span>
+          <input type="tel" name="mobile" id="mobile" required autocomplete="tel" placeholder="+44 7..." />
+        </label>
+
+        <label title="Your business or organization name">
+          Business / Organization <span aria-hidden="true">*</span>
+          <input type="text" name="organization" id="organization" required autocomplete="organization" />
+        </label>
+
+        <label title="Choose your membership level">
+          Membership Level
+          <select name="membership" id="membership" aria-describedby="level-help">
+            <option value="NP">NP (Non-Profit) — £0</option>
+            <option value="Bronze">Bronze</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+          </select>
+        </label>
+        <p id="level-help" class="help">NP is for registered non-profits (no fee). Higher tiers include more benefits.</p>
+
+        <label title="Briefly describe your business or organization">
+          Organization Description
+          <textarea name="orgDescription" id="orgDescription" rows="5" placeholder="Tell us about your organization (services, mission, audience, etc.)"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+
+        <button type="submit" class="btn-primary">Submit Application</button>
+      </form>
+
+      <aside class="levels" aria-labelledby="levels-heading">
+        <h2 id="levels-heading" class="sr-only">Membership Levels</h2>
+
+        <article class="level-card" data-animate>
+          <h3>NP Membership</h3>
+          <p>For registered non-profits. No fee. Community exposure + event access.</p>
+          <p><a href="#np-modal" class="open-modal" data-modal="np-modal">See benefits</a></p>
+        </article>
+
+        <article class="level-card" data-animate>
+          <h3>Bronze</h3>
+          <p>Starter benefits for small businesses ready to grow locally.</p>
+          <p><a href="#bronze-modal" class="open-modal" data-modal="bronze-modal">See benefits</a></p>
+        </article>
+
+        <article class="level-card" data-animate>
+          <h3>Silver</h3>
+          <p>Expanded visibility and training with event discounts.</p>
+          <p><a href="#silver-modal" class="open-modal" data-modal="silver-modal">See benefits</a></p>
+        </article>
+
+        <article class="level-card" data-animate>
+          <h3>Gold</h3>
+          <p>Top-tier exposure, spotlight ads, and premium event perks.</p>
+          <p><a href="#gold-modal" class="open-modal" data-modal="gold-modal">See benefits</a></p>
+        </article>
+      </aside>
+    </section>
+
+    <dialog id="np-modal" aria-labelledby="np-title">
+      <h3 id="np-title">NP Membership Benefits</h3>
+      <ul>
+        <li>No annual fee (registered non-profits)</li>
+        <li>Directory listing</li>
+        <li>Access to community events</li>
+      </ul>
+      <form method="dialog"><button>Close</button></form>
+    </dialog>
+
+    <dialog id="bronze-modal" aria-labelledby="bronze-title">
+      <h3 id="bronze-title">Bronze Benefits</h3>
+      <ul>
+        <li>Directory listing + logo</li>
+        <li>New member welcome post</li>
+        <li>Quarterly networking events (standard)</li>
+      </ul>
+      <form method="dialog"><button>Close</button></form>
+    </dialog>
+
+    <dialog id="silver-modal" aria-labelledby="silver-title">
+      <h3 id="silver-title">Silver Benefits</h3>
+      <ul>
+        <li>All Bronze benefits</li>
+        <li>Event discounts (10%)</li>
+        <li>1x homepage spotlight per year</li>
+      </ul>
+      <form method="dialog"><button>Close</button></form>
+    </dialog>
+
+    <dialog id="gold-modal" aria-labelledby="gold-title">
+      <h3 id="gold-title">Gold Benefits</h3>
+      <ul>
+        <li>All Silver benefits</li>
+        <li>Event discounts (25%)</li>
+        <li>Quarterly homepage spotlights</li>
+        <li>Featured newsletter ad</li>
+      </ul>
+      <form method="dialog"><button>Close</button></form>
+    </dialog>
   </main>
+
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Olakunle Obademi • WDD 231</p>
-    <p>Last modified: <span id="lastModified"></span></p>
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Chamber</p>
+    </div>
   </footer>
-  <script src="scripts/nav.js" defer></script>
-  
+
+  <script src="scripts/join.js" defer></script>
 </body>
 </html>
