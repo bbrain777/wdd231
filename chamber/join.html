@@ -2,18 +2,18 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta content="width=device-width,initial-scale=1.0" name="viewport">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Join • Chamber of Commerce</title>
-<meta content="Apply to join the Chamber of Commerce and grow your business through networking events, promotions, and member support." name="description">
-<meta content="Olakunle Obademi" name="author">
-<link href="images/favicon.ico" rel="icon">
-<meta content="Join • Chamber of Commerce" property="og:title">
-<meta content="Apply to join the Chamber of Commerce and discover the benefits of membership." property="og:description">
-<meta content="images/og-cover.png" property="og:image">
-<meta content="https://bbrain777.github.io/wdd231/chamber/join.html" property="og:url">
-<link href="styles/chamber.css" rel="stylesheet">
-<link href="styles/join.css" rel="stylesheet">
+<meta content="Apply to join the Chamber of Commerce and grow your business through networking events, promotions, and member support." name="description"/>
+<meta content="Olakunle Obademi" name="author"/>
+<link href="images/favicon.ico" rel="icon"/>
+<meta content="Join • Chamber of Commerce" property="og:title"/>
+<meta content="Apply to join the Chamber of Commerce and discover the benefits of membership." property="og:description"/>
+<meta content="images/og-cover.png" property="og:image"/>
+<meta content="https://bbrain777.github.io/wdd231/chamber/join.html" property="og:url"/>
+<link href="styles/chamber.css" rel="stylesheet"/>
+<link href="styles/join.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -35,27 +35,27 @@
 <h2 id="form-heading">Membership Application</h2>
 <label title="Enter your given name">
           First Name <span aria-hidden="true">*</span>
-<input autocomplete="given-name" id="firstName" inputmode="text" name="firstName" required="" type="text">
+<input autocomplete="given-name" id="firstName" inputmode="text" name="firstName" required="" type="text"/>
 </label>
 <label title="Enter your family name">
           Last Name <span aria-hidden="true">*</span>
-<input autocomplete="family-name" id="lastName" inputmode="text" name="lastName" required="" type="text">
+<input autocomplete="family-name" id="lastName" inputmode="text" name="lastName" required="" type="text"/>
 </label>
 <label title="Your role or title in your organization (letters, hyphens, spaces; min 7 characters)">
           Organizational Title
-          <input autocomplete="organization-title" id="orgTitle" name="orgTitle" pattern="[A-Za-z\-\s]{7,}" placeholder="e.g., Operations Lead" type="text">
+          <input autocomplete="organization-title" id="orgTitle" name="orgTitle" pattern="[A-Za-z\-\s]{7,}" placeholder="e.g., Operations Lead" type="text"/>
 </label>
 <label title="Enter a valid email address">
           Email <span aria-hidden="true">*</span>
-<input autocomplete="email" id="email" name="email" placeholder="name@example.com" required="" type="email">
+<input autocomplete="email" id="email" name="email" placeholder="name@example.com" required="" type="email"/>
 </label>
 <label title="Enter your mobile phone number">
           Mobile Number <span aria-hidden="true">*</span>
-<input autocomplete="tel" id="mobile" name="mobile" placeholder="+44 7..." required="" type="tel">
+<input autocomplete="tel" id="mobile" name="mobile" placeholder="+44 7..." required="" type="tel"/>
 </label>
 <label title="Your business or organization name">
           Business / Organization <span aria-hidden="true">*</span>
-<input autocomplete="organization" id="organization" name="organization" required="" type="text">
+<input autocomplete="organization" id="organization" name="organization" required="" type="text"/>
 </label>
 <label title="Choose your membership level">
           Membership Level
@@ -71,7 +71,7 @@
           Organization Description
           <textarea id="orgDescription" name="orgDescription" placeholder="Tell us about your organization (services, mission, audience, etc.)" rows="5"></textarea>
 </label>
-<input id="timestamp" name="timestamp" type="hidden">
+<input id="timestamp" name="timestamp" type="hidden"/>
 <button class="btn-primary" type="submit">Submit Application</button>
 </form>
 <aside aria-labelledby="levels-heading" class="levels">
@@ -105,7 +105,7 @@
 <li>Directory listing</li>
 <li>Access to community events</li>
 </ul>
-<form method="dialog"><button>Close</button></form>
+<div class="dialog-body"><button>Close</button></div>
 </dialog>
 <dialog aria-labelledby="bronze-title" id="bronze-modal">
 <h3 id="bronze-title">Bronze Benefits</h3>
@@ -114,7 +114,7 @@
 <li>New member welcome post</li>
 <li>Quarterly networking events (standard)</li>
 </ul>
-<form method="dialog"><button>Close</button></form>
+<div class="dialog-body"><button>Close</button></div>
 </dialog>
 <dialog aria-labelledby="silver-title" id="silver-modal">
 <h3 id="silver-title">Silver Benefits</h3>
@@ -123,7 +123,7 @@
 <li>Event discounts (10%)</li>
 <li>1x homepage spotlight per year</li>
 </ul>
-<form method="dialog"><button>Close</button></form>
+<div class="dialog-body"><button>Close</button></div>
 </dialog>
 <dialog aria-labelledby="gold-title" id="gold-modal">
 <h3 id="gold-title">Gold Benefits</h3>
@@ -133,12 +133,20 @@
 <li>Quarterly homepage spotlights</li>
 <li>Featured newsletter ad</li>
 </ul>
-<form method="dialog"><button>Close</button></form>
+<div class="dialog-body"><button>Close</button></div>
 </dialog>
 </main>
 <footer class="site-footer">
 <div class="wrap"><p>© <span id="year">2025</span> Olakunle Obademi • WDD 231</p><p>Last modified: <span id="lastModified"></span></p></div>
 </footer>
 <script defer="" src="scripts/join.js"></script>
-</body>
+<script>
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.close-modal');
+      if (btn) {
+        const dlg = btn.closest('dialog');
+        if (dlg && typeof dlg.close === 'function') dlg.close();
+      }
+    });
+    </script></body>
 </html>
