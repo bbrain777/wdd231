@@ -1,75 +1,95 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Chamber of Commerce</title>
-<meta content="Explore the Chamber of Commerce: events, member benefits, and local business resources." name="description"/>
-<meta content="Olakunle Obademi" name="author"/>
-<link href="images/favicon.ico" rel="icon"/>
-<meta content="Chamber of Commerce" property="og:title"/>
-<meta content="Apply to join the Chamber of Commerce and discover the benefits of membership." property="og:description"/>
-<meta content="images/og-cover.png" property="og:image"/>
-<meta content="https://bbrain777.github.io/wdd231/chamber/index.html" property="og:url"/>
-<link href="styles/chamber.css?v=6" rel="stylesheet"/>
-<link href="styles/join.css?v=6" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Chamber of Commerce</title>
+
+  <meta name="description" content="Explore the Chamber of Commerce: events, member benefits, and local business resources.">
+  <meta name="author" content="Olakunle Obademi">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <meta property="og:title" content="Chamber of Commerce">
+  <meta property="og:description" content="Apply to join the Chamber of Commerce and discover the benefits of membership.">
+  <meta property="og:image" content="images/og-cover.png">
+  <meta property="og:url" content="https://bbrain777.github.io/wdd231/chamber/index.html">
+
+  <link rel="stylesheet" href="styles/chamber.css?v=7">
+  <link rel="stylesheet" href="styles/join.css?v=7">
 </head>
+
 <body>
-<header class="site-header">
-<nav aria-label="Primary">
-<ul class="nav">
-<!-- Removed hard-coded aria-current to avoid duplicate; JS will handle highlighting -->
-<li><a href="home.html">Home</a></li>
-<li><a href="directory.html">Directory</a></li>
-<li><a href="discover.html">Discover</a></li>
-<li><a href="join.html">Join</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<h1>Thornaby &amp; Stockton Chamber of Commerce</h1>
-<section aria-labelledby="hero-title" class="hero">
-<div class="hero__content">
-<h2 id="hero-title">Grow Together. Thrive Locally.</h2>
-<p>We connect businesses, promote local growth, and serve our community with events, training, and networking.</p>
-<a class="btn cta" href="join.html">Join the Chamber</a>
-<a class="btn btn--ghost" href="directory.html">View Directory</a>
-</div>
-<img alt="Collage of local Thornaby &amp; Stockton business life" class="hero__img" height="315" src="./images/og-cover.png" width="600"/>
-</section>
-<section aria-labelledby="stats-title" class="quick-stats">
-<h2 id="stats-title">Today in the Chamber</h2>
-<ul class="stats">
-<li><span aria-live="polite" id="memberCount">—</span><small> Members</small></li>
-<li><span aria-live="polite" id="goldCount">—</span><small> Gold/Silver</small></li>
-<li><span id="todayDate">—</span><small> Date</small></li>
-</ul>
-</section>
-<section aria-labelledby="spotlights-title" class="spotlights">
-<h2 id="spotlights-title">Business Spotlights</h2>
-<div aria-live="polite" class="spotlights__grid" id="spotlights"></div>
-</section>
-<section aria-labelledby="events-title" class="events">
-<h2 id="events-title">Upcoming Events</h2>
-<ul class="event-list">
-<li><article class="event"><h3>Monthly Networking Breakfast</h3><p><time datetime="2025-09-20">20 Sep</time> • 8:00 AM • Town Hall</p></article></li>
-<li><article class="event"><h3>Small Business Grants Workshop</h3><p><time datetime="2025-09-28">28 Sep</time> • 6:00 PM • Library Annex</p></article></li>
-</ul>
-</section>
-<section aria-labelledby="weather-title" class="card" id="weather">
-<h2 id="weather-title">Local Weather</h2>
-<div><strong>Now:</strong> <span id="weather-temp">--</span>°C — <span id="weather-desc">Loading…</span></div>
-<!-- Removed aria-label (redundant); tied to heading instead -->
-<div aria-labelledby="weather-title" class="weather__forecast" id="weather-forecast"></div>
-</section>
-</main>
-<footer class="site-footer">
-<p>© <span id="year"></span> Olakunle Obademi • WDD 231</p>
-<p>Last modified: <span id="lastModified"></span></p>
-</footer>
-<script defer="" src="scripts/nav.js"></script>
-<script defer="" src="scripts/home.js"></script>
-<script defer="" src="scripts/weather.js"></script>
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thornaby &amp; Stockton Chamber of Commerce</h1>
+
+    <section aria-labelledby="hero-title" class="hero">
+      <div class="hero__content">
+        <h2 id="hero-title">Grow Together. Thrive Locally.</h2>
+        <p>We connect businesses, promote local growth, and serve our community with events, training, and networking.</p>
+        <a class="btn cta" href="join.html">Join the Chamber</a>
+        <a class="btn btn--ghost" href="directory.html">View Directory</a>
+      </div>
+      <img class="hero__img" src="images/og-cover.png" width="600" height="315" alt="Collage of local Thornaby &amp; Stockton business life">
+    </section>
+
+    <section aria-labelledby="stats-title" class="quick-stats">
+      <h2 id="stats-title">Today in the Chamber</h2>
+      <ul class="stats">
+        <li><span id="memberCount" aria-live="polite">—</span><small> Members</small></li>
+        <li><span id="goldCount" aria-live="polite">—</span><small> Gold/Silver</small></li>
+        <li><span id="todayDate">—</span><small> Date</small></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="spotlights-title" class="spotlights">
+      <h2 id="spotlights-title">Business Spotlights</h2>
+      <div class="spotlights__grid" id="spotlights" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="events-title" class="events">
+      <h2 id="events-title">Upcoming Events</h2>
+      <ul class="event-list">
+        <li>
+          <article class="event">
+            <h3>Monthly Networking Breakfast</h3>
+            <p><time datetime="2025-09-20">20 Sep</time> • 8:00 AM • Town Hall</p>
+          </article>
+        </li>
+        <li>
+          <article class="event">
+            <h3>Small Business Grants Workshop</h3>
+            <p><time datetime="2025-09-28">28 Sep</time> • 6:00 PM • Library Annex</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="weather-title" class="card" id="weather">
+      <h2 id="weather-title">Local Weather</h2>
+      <div><strong>Now:</strong> <span id="weather-temp">--</span>°C — <span id="weather-desc">Loading…</span></div>
+      <div id="weather-forecast" class="weather__forecast" aria-labelledby="weather-title"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Olakunle Obademi • WDD 231</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
 </body>
 </html>
