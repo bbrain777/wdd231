@@ -2,19 +2,24 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Join • Chamber</title>
-<meta content="Apply to join the Chamber of Commerce." name="description"/>
-<link href="images/favicon.ico" rel="icon"/>
-<link href="styles/chamber.css" rel="stylesheet"/>
-<link href="styles/join.css" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Join • Chamber of Commerce</title>
+<meta content="Apply to join the Chamber of Commerce and grow your business network through events, promotion, and support." name="description">
+<meta content="Olakunle Obademi" name="author">
+<link href="images/favicon.ico" rel="icon">
+<meta content="Join • Chamber of Commerce" property="og:title">
+<meta content="Apply to join the Chamber of Commerce and grow your business network through events, promotion, and support." property="og:description">
+<meta content="images/og-cover.png" property="og:image">
+<meta content="https://bbrain777.github.io/wdd231/chamber/join.html" property="og:url">
+<link href="styles/chamber.css" rel="stylesheet">
+<link href="styles/join.css" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
 <div class="wrap">
 <a aria-label="Go to home" class="brand" href="index.html">Chamber</a>
-<button aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation" id="nav-toggle">☰</button><nav aria-label="Primary" class="site-nav" id="primary-nav">
+<nav aria-label="Primary" class="site-nav">
 <a href="index.html">Home</a>
 <a href="directory.html">Directory</a>
 <a aria-current="page" href="join.html">Join</a>
@@ -30,32 +35,32 @@
 <h2 id="form-heading">Membership Application</h2>
 <label title="Enter your given name">
           First Name <span aria-hidden="true">*</span>
-<input autocomplete="given-name" id="firstName" inputmode="text" name="firstName" required="True" title="First Name" type="text"/>
+<input autocomplete="given-name" id="firstName" inputmode="text" name="firstName" required="" type="text">
 </label>
 <label title="Enter your family name">
           Last Name <span aria-hidden="true">*</span>
-<input autocomplete="family-name" id="lastName" inputmode="text" name="lastName" required="True" title="Last Name" type="text"/>
+<input autocomplete="family-name" id="lastName" inputmode="text" name="lastName" required="" type="text">
 </label>
 <label title="Your role or title in your organization (letters, hyphens, spaces; min 7 characters)">
           Organizational Title
-          <input autocomplete="organization-title" id="title" name="title" pattern="[A-Za-z\- ]{7,}" placeholder="e.g., Operations Lead" required="True" title="Position Title" type="text"/>
+          <input autocomplete="organization-title" id="orgTitle" name="orgTitle" pattern="[A-Za-z\-\s]{7,}" placeholder="e.g., Operations Lead" type="text">
 </label>
 <label title="Enter a valid email address">
           Email <span aria-hidden="true">*</span>
-<input autocomplete="email" id="email" name="email" placeholder="name@example.com" required="True" title="Email Address" type="email"/>
+<input autocomplete="email" id="email" name="email" placeholder="name@example.com" required="" type="email">
 </label>
 <label title="Enter your mobile phone number">
           Mobile Number <span aria-hidden="true">*</span>
-<input autocomplete="tel" id="mobile" name="mobile" placeholder="+44 7..." required="True" title="Mobile Phone" type="tel"/>
+<input autocomplete="tel" id="mobile" name="mobile" placeholder="+44 7..." required="" type="tel">
 </label>
 <label title="Your business or organization name">
           Business / Organization <span aria-hidden="true">*</span>
-<input autocomplete="organization" id="organization" name="organization" required="True" title="Business or Organization" type="text"/>
+<input autocomplete="organization" id="organization" name="organization" required="" type="text">
 </label>
 <label title="Choose your membership level">
           Membership Level
-          <select aria-describedby="level-help" autocomplete="off" id="membership" name="membership" required="True" title="Select Membership Level">
-<option value="NP">NP (Non-Profit) — £0</option>
+          <select aria-describedby="level-help" id="membership" name="membership">
+<option value="">Select a Membership Level…</option>
 <option value="Bronze">Bronze</option>
 <option value="Silver">Silver</option>
 <option value="Gold">Gold</option>
@@ -64,9 +69,9 @@
 <p class="help" id="level-help">NP is for registered non-profits (no fee). Higher tiers include more benefits.</p>
 <label title="Briefly describe your business or organization">
           Organization Description
-          <textarea autocomplete="off" id="orgDescription" name="orgDescription" placeholder="Briefly describe your organization" rows="5" title="Organization Description"></textarea>
+          <textarea id="orgDescription" name="orgDescription" placeholder="Tell us about your organization (services, mission, audience, etc.)" rows="5"></textarea>
 </label>
-<input autocomplete="off" id="timestamp" name="timestamp" title="Form Load Timestamp" type="hidden"/>
+<input id="timestamp" name="timestamp" type="hidden">
 <button class="btn-primary" type="submit">Submit Application</button>
 </form>
 <aside aria-labelledby="levels-heading" class="levels">
@@ -132,10 +137,8 @@
 </dialog>
 </main>
 <footer class="site-footer">
-<div class="wrap">
-<p>© <span id="year"></span> Chamber</p>
-</div>
+<div class="wrap"><p>© <span id="year">2025</span> Olakunle Obademi • WDD 231</p><p>Last modified: <span id="lastModified"></span></p></div>
 </footer>
 <script defer="" src="scripts/join.js"></script>
-<script src="scripts/nav.js"></script></body>
+</body>
 </html>

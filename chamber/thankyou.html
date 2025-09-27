@@ -2,19 +2,24 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Thank You • Chamber</title>
-<meta content="Thank you for applying to join the Chamber of Commerce." name="description"/>
-<link href="images/favicon.ico" rel="icon"/>
-<link href="styles/chamber.css" rel="stylesheet"/>
-<link href="styles/join.css" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Thank You • Chamber of Commerce</title>
+<meta content="Thank you for applying to the Chamber of Commerce. Your submission details are shown below." name="description">
+<meta content="Olakunle Obademi" name="author">
+<link href="images/favicon.ico" rel="icon">
+<meta content="Thank You • Chamber of Commerce" property="og:title">
+<meta content="Thank you for applying to the Chamber of Commerce. Your submission details are shown below." property="og:description">
+<meta content="images/og-cover.png" property="og:image">
+<meta content="https://bbrain777.github.io/wdd231/chamber/thankyou.html" property="og:url">
+<link href="styles/chamber.css" rel="stylesheet">
+<link href="styles/join.css" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
 <div class="wrap">
 <a class="brand" href="index.html">Chamber</a>
-<button aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation" id="nav-toggle">☰</button><nav aria-label="Primary" class="site-nav" id="primary-nav">
+<nav aria-label="Primary" class="site-nav">
 <a href="index.html">Home</a>
 <a href="directory.html">Directory</a>
 <a href="join.html">Join</a>
@@ -32,9 +37,7 @@
 </section>
 </main>
 <footer class="site-footer">
-<div class="wrap">
-<p>© <span id="year"></span> Chamber</p>
-</div>
+<div class="wrap"><p>© <span id="year">2025</span> Olakunle Obademi • WDD 231</p><p>Last modified: <span id="lastModified"></span></p></div>
 </footer>
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -66,5 +69,5 @@
       if (val && val.trim() !== '') addRow(label, val);
     });
   </script>
-<script src="scripts/nav.js"></script></body>
+</body>
 </html>
