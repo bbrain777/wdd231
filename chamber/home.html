@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Thornaby & Stockton Chamber of Commerce — Home</title>
+  <meta name="description" content="Connect with local businesses, events, and opportunities in Thornaby & Stockton.">
+  <meta name="author" content="Olakunle Obademi">
+  <meta property="og:title" content="Thornaby & Stockton Chamber — Home">
+  <meta property="og:description" content="Connect with local businesses, events, and opportunities in Thornaby & Stockton.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bbrain777.github.io/wdd231/chamber/">
+  <meta property="og:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-cover.png">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <!-- Removed hard-coded aria-current to avoid duplicate; JS will handle highlighting -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Thornaby & Stockton Chamber of Commerce</h1>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h2 id="hero-title">Grow Together. Thrive Locally.</h2>
+        <p>We connect businesses, promote local growth, and serve our community with events, training, and networking.</p>
+        <a class="btn cta" href="join.html">Join the Chamber</a>
+        <a class="btn btn--ghost" href="directory.html">View Directory</a>
+      </div>
+      <img class="hero__img" src="./images/og-cover.png" width="600" height="315" alt="Collage of local Thornaby & Stockton business life">
+    </section>
+    <section class="quick-stats" aria-labelledby="stats-title">
+      <h2 id="stats-title">Today in the Chamber</h2>
+      <ul class="stats">
+        <li><span id="memberCount" aria-live="polite">—</span><small> Members</small></li>
+        <li><span id="goldCount" aria-live="polite">—</span><small> Gold/Silver</small></li>
+        <li><span id="todayDate">—</span><small> Date</small></li>
+      </ul>
+    </section>
+    <section class="spotlights" aria-labelledby="spotlights-title">
+      <h2 id="spotlights-title">Business Spotlights</h2>
+      <div id="spotlights" class="spotlights__grid" aria-live="polite"></div>
+    </section>
+    <section class="events" aria-labelledby="events-title">
+      <h2 id="events-title">Upcoming Events</h2>
+      <ul class="event-list">
+        <li><article class="event"><h3>Monthly Networking Breakfast</h3><p><time datetime="2025-09-20">20 Sep</time> • 8:00 AM • Town Hall</p></article></li>
+        <li><article class="event"><h3>Small Business Grants Workshop</h3><p><time datetime="2025-09-28">28 Sep</time> • 6:00 PM • Library Annex</p></article></li>
+      </ul>
+    </section>
+  
+    <section id="weather" aria-labelledby="weather-title" class="card">
+      <h2 id="weather-title">Local Weather</h2>
+      <div><strong>Now:</strong> <span id="weather-temp">--</span>°C — <span id="weather-desc">Loading…</span></div>
+      <!-- Removed aria-label (redundant); tied to heading instead -->
+      <div class="weather__forecast" id="weather-forecast" aria-labelledby="weather-title"></div>
+    </section>
+    
+  </main>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Olakunle Obademi • WDD 231</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+</body>
+</html>

@@ -1,45 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thank You • Chamber</title>
-  <meta name="description" content="Thank you for applying to join the Chamber of Commerce." />
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/join.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Thank You • Chamber</title>
+<meta content="Thank you for applying to join the Chamber of Commerce." name="description"/>
+<link href="images/favicon.ico" rel="icon"/>
+<link href="styles/chamber.css" rel="stylesheet"/>
+<link href="styles/join.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Chamber</a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main" class="wrap">
-    <h1>Thank You!</h1>
-    <p class="lede">We received your membership application. A confirmation has been generated below.</p>
-
-    <section class="card">
-      <h2>Submission Details</h2>
-      <dl class="kv" id="submission-details"></dl>
-      <p><a class="btn-primary" href="join.html">Submit another application</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; <span id="year"></span> Chamber</p>
-    </div>
-  </footer>
-
-  <script>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html">Chamber</a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation" id="nav-toggle">☰</button><nav aria-label="Primary" class="site-nav" id="primary-nav">
+<a href="index.html">Home</a>
+<a href="directory.html">Directory</a>
+<a href="join.html">Join</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<h1>Thank You!</h1>
+<p class="lede">We received your membership application. A confirmation has been generated below.</p>
+<section class="card">
+<h2>Submission Details</h2>
+<dl class="kv" id="submission-details"></dl>
+<p><a class="btn-primary" href="join.html">Submit another application</a></p>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>© <span id="year"></span> Chamber</p>
+</div>
+</footer>
+<script>
     document.getElementById('year').textContent = new Date().getFullYear();
     const params = new URLSearchParams(window.location.search);
     const required = [
@@ -69,5 +66,5 @@
       if (val && val.trim() !== '') addRow(label, val);
     });
   </script>
-</body>
+<script src="scripts/nav.js"></script></body>
 </html>
