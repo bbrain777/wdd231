@@ -1,46 +1,49 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Thank You • Chamber of Commerce</title>
-<meta content="Thank you for applying to the Chamber of Commerce. Your submission details are shown below." name="description"/>
-<meta content="Olakunle Obademi" name="author"/>
-<link href="images/favicon.ico" rel="icon"/>
-<meta content="Thank You • Chamber of Commerce" property="og:title"/>
-<meta content="Apply to join the Chamber of Commerce and discover the benefits of membership." property="og:description"/>
-<meta content="images/og-cover.png" property="og:image"/>
-<meta content="https://bbrain777.github.io/wdd231/chamber/thankyou.html" property="og:url"/>
-<link href="styles/chamber.css?v=6" rel="stylesheet"/>
-<link href="styles/join.css?v=6" rel="stylesheet"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You • Chamber</title>
+  <meta name="description" content="Thank you for applying to join the Chamber of Commerce." />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/chamber.css" />
+  <link rel="stylesheet" href="styles/join.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="wrap">
-<a class="brand" href="index.html">Chamber</a>
-<nav aria-label="Primary" class="site-nav">
-<a href="index.html">Home</a>
-<a href="directory.html">Directory</a>
-<a href="join.html">Join</a>
-<a href="contact.html">Contact</a>
-</nav>
-</div>
-</header>
-<main class="wrap" id="main">
-<h1>Thank You!</h1>
-<p class="lede">We received your membership application. A confirmation has been generated below.</p>
-<section class="card">
-<h2>Submission Details</h2>
-<dl class="kv" id="submission-details"></dl>
-<p><a class="btn-primary" href="join.html">Submit another application</a></p>
-</section>
-</main>
-<footer class="site-footer">
-<div class="wrap"><p>© <span id="year">2025</span> Olakunle Obademi • WDD 231</p><p>Last modified: <span id="lastModified"></span></p></div>
-</footer>
-<script>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Chamber</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <h1>Thank You!</h1>
+    <p class="lede">We received your membership application. A confirmation has been generated below.</p>
+
+    <section class="card">
+      <h2>Submission Details</h2>
+      <dl class="kv" id="submission-details"></dl>
+      <p><a class="btn-primary" href="join.html">Submit another application</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Chamber</p>
+    </div>
+  </footer>
+
+  <script>
+    // footer year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Render submitted fields from the query string
     const params = new URLSearchParams(window.location.search);
     const required = [
       ['First Name', 'firstName'],
@@ -52,10 +55,11 @@
     ];
     const optional = [
       ['Membership Level', 'membership'],
-      ['Organizational Title', 'orgTitle'],
+      ['Organizational Title', 'title'],
       ['Organization Description', 'orgDescription'],
     ];
     const dl = document.getElementById('submission-details');
+
     function addRow(label, value) {
       const dt = document.createElement('dt');
       dt.textContent = label;
@@ -63,6 +67,7 @@
       dd.textContent = value || '—';
       dl.append(dt, dd);
     }
+
     required.forEach(([label, key]) => addRow(label, params.get(key)));
     optional.forEach(([label, key]) => {
       const val = params.get(key);
