@@ -5,7 +5,7 @@
       "address": "123 High St, Thornaby TS17",
       "phone": "01642 123456",
       "website": "https://example.com/tees-tech",
-      "image": "tees-tech.png",
+      "image": "tees-tech.webp",
       "membership": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "45 Riverside, Stockton-on-Tees TS18",
       "phone": "01642 654321",
       "website": "https://example.com/coffee",
-      "image": "coffee.png",
+      "image": "coffee.webp",
       "membership": "Silver"
     },
     {
@@ -21,7 +21,7 @@
       "address": "78 Gym Rd, Stockton TS18",
       "phone": "01642 987654",
       "website": "https://example.com/fitness",
-      "image": "fitness.png",
+      "image": "fitness.webp",
       "membership": "Bronze"
     },
     {
@@ -29,7 +29,7 @@
       "address": "12 Garden Ln, Stockton TS19",
       "phone": "01642 246810",
       "website": "https://example.com/flowers",
-      "image": "flowers.png",
+      "image": "flowers.webp",
       "membership": "Silver"
     },
     {
@@ -37,7 +37,7 @@
       "address": "9 Library St, Thornaby TS17",
       "phone": "01642 445566",
       "website": "https://example.com/books",
-      "image": "books.png",
+      "image": "books.webp",
       "membership": "Gold"
     },
     {
@@ -45,7 +45,7 @@
       "address": "5 Ledger Ave, Stockton TS18",
       "phone": "01642 778899",
       "website": "https://example.com/accounts",
-      "image": "accounts.png",
+      "image": "accounts.webp",
       "membership": "Bronze"
     },
     {
@@ -53,7 +53,7 @@
       "address": "33 Code Way, Thornaby TS17",
       "phone": "01642 334455",
       "website": "https://example.com/webstudio",
-      "image": "webstudio.png",
+      "image": "webstudio.webp",
       "membership": "Silver"
     }
   ]
