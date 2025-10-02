@@ -49,15 +49,16 @@
       ['First Name', 'firstName'],
       ['Last Name', 'lastName'],
       ['Email', 'email'],
-      ['Mobile', 'mobile'],
+      ['Mobile', 'phone'],                 // ← fixed
       ['Business / Organization', 'organization'],
       ['Submitted At', 'timestamp'],
     ];
     const optional = [
-      ['Membership Level', 'membership'],
-      ['Organizational Title', 'title'],
-      ['Organization Description', 'orgDescription'],
+      ['Membership Level', 'level'],       // ← fixed
+      ['Organizational Title', 'orgTitle'],// ← fixed
+      ['Organization Description', 'orgDesc'], // ← fixed
     ];
+
     const dl = document.getElementById('submission-details');
 
     function addRow(label, value) {
