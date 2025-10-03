@@ -1,66 +1,58 @@
 [
   {
-    "id": "1",
-    "name": "Riverside Stadium",
-    "address": "Middlesbrough TS3 6RS",
-    "description": "Home of Middlesbrough FC—sports, concerts, and community events.",
-    "photo": "riverside.webp",
-    "url": "https://www.mfc.co.uk/"
+    "name": "Albertpark",
+    "address": "1 High Street, Stockton-on-Tees TS01 1AB, UK",
+    "description": "Albertpark is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi1.webp",
+    "more": "https://www.stockton.gov.uk/"
   },
   {
-    "id": "2",
-    "name": "Tees Transporter Bridge",
-    "address": "Ferry Rd, Middlesbrough TS2 1PL",
-    "description": "Iconic 1911 bridge—engineering heritage and panoramic views.",
-    "photo": "transporter.webp",
-    "url": "https://www.theteestransporterbridge.co.uk/"
+    "name": "Albertpark",
+    "address": "2 High Street, Stockton-on-Tees TS02 1AB, UK",
+    "description": "Albertpark is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi2.webp",
+    "more": "https://www.stockton.gov.uk/"
   },
   {
-    "id": "3",
-    "name": "Infinity Bridge",
-    "address": "Stockton-on-Tees TS18 2NB",
-    "description": "Striking pedestrian bridge over the Tees—great evening lights.",
-    "photo": "infinity.webp",
-    "url": "https://www.stockton.gov.uk/"
+    "name": "Forum",
+    "address": "3 High Street, Stockton-on-Tees TS03 1AB, UK",
+    "description": "Forum is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi3.webp",
+    "more": "https://www.stockton.gov.uk/"
   },
   {
-    "id": "4",
-    "name": "Preston Park Museum",
-    "address": "Yarm Rd, Eaglescliffe TS18 3RH",
-    "description": "Local history museum with Victorian street and riverside park.",
-    "photo": "prestonpark.webp",
-    "url": "https://www.prestonparkmuseum.co.uk/"
+    "name": "Infinity",
+    "address": "4 High Street, Stockton-on-Tees TS04 1AB, UK",
+    "description": "Infinity is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi4.webp",
+    "more": "https://www.stockton.gov.uk/"
   },
   {
-    "id": "5",
-    "name": "Ropner Park",
-    "address": "Hartburn Ln, Stockton-on-Tees TS18 4EF",
-    "description": "Victorian parkland, lake, and seasonal events—family friendly.",
-    "photo": "ropner.webp",
-    "url": "https://www.stockton.gov.uk/"
+    "name": "Mima",
+    "address": "5 High Street, Stockton-on-Tees TS05 1AB, UK",
+    "description": "Mima is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi5.webp",
+    "more": "https://www.stockton.gov.uk/"
   },
   {
-    "id": "6",
-    "name": "Billingham Forum",
-    "address": "Queensway, Billingham TS23 2LJ",
-    "description": "Leisure complex with ice arena, pool, gym, and theatre.",
-    "photo": "forum.webp",
-    "url": "https://www.forumtheatrebillingham.co.uk/"
+    "name": "Prestonpark",
+    "address": "6 High Street, Stockton-on-Tees TS06 1AB, UK",
+    "description": "Prestonpark is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi6.webp",
+    "more": "https://www.stockton.gov.uk/"
   },
   {
-    "id": "7",
-    "name": "MIMA",
-    "address": "Centre Square, Middlesbrough TS1 2AZ",
-    "description": "Modern art gallery with exhibitions, learning, and community.",
-    "photo": "mima.webp",
-    "url": "https://mima.art/"
+    "name": "Riverside",
+    "address": "7 High Street, Stockton-on-Tees TS07 1AB, UK",
+    "description": "Riverside is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi7.webp",
+    "more": "https://www.stockton.gov.uk/"
   },
   {
-    "id": "8",
-    "name": "Albert Park",
-    "address": "Linthorpe Rd, Middlesbrough TS1 3LB",
-    "description": "Large town park with lake, sports, and seasonal fairs.",
-    "photo": "albertpark.webp",
-    "url": "https://www.middlesbrough.gov.uk/"
+    "name": "Ropner",
+    "address": "8 High Street, Stockton-on-Tees TS08 1AB, UK",
+    "description": "Ropner is a local highlight in the Thornaby & Stockton area—ideal for visitors and prospective chamber members.",
+    "image": "images/poi8.webp",
+    "more": "https://www.stockton.gov.uk/"
   }
 ]

@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en-US">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Discover | Tees Valley Chamber</title>
-<meta content="Discover Stockton-on-Tees highlights: landmarks, parks, culture, venues and things to do for prospective chamber members and visitors." name="description"/>
-<link href="styles/discover.css" rel="stylesheet"/>
-<link href="https://bbrain777.github.io/wdd231/chamber/discover.html" rel="canonical"/><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>Discover Thornaby & Stockton | T&S Chamber</title>
+  <meta name="description" content="Discover Stockton-on-Tees highlights: landmarks, parks, culture, venues and things to do for prospective chamber members and visitors.">
+  <link rel="canonical" href="https://bbrain777.github.io/wdd231/chamber/discover.html">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/chamber.css?v=7">
+  <link rel="stylesheet" href="styles/discover.css?v=7">
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://bbrain777.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Discover Thornaby & Stockton | T&S Chamber">
+  <meta property="og:description" content="Discover Stockton-on-Tees highlights: landmarks, parks, culture, venues and things to do for prospective chamber members and visitors.">
+  <meta property="og:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-discover.webp">
+  <meta property="og:image:alt" content="Discover Stockton-on-Tees highlights collage">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Discover Thornaby & Stockton | T&S Chamber">
+  <meta name="twitter:description" content="Discover Stockton-on-Tees highlights: landmarks, parks, culture, venues and things to do for prospective chamber members and visitors.">
+  <meta name="twitter:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-discover.webp">
 </head>
+
 <body>
-<header class="site-header">
-<div class="wrap">
-<a aria-label="Chamber home" class="logo" href="index.html">Tees Valley Chamber</a>
-<nav aria-label="Main navigation" class="site-nav">
-<button aria-controls="navList" aria-expanded="false" class="menu" id="menuBtn">☰</button>
-<ul class="nav-list" id="navList">
-<li><a href="index.html">Home</a></li>
-<li><a href="join.html">Join</a></li>
-<li><a href="directory.html">Directory</a></li>
-<li aria-current="page"><a class="active" href="discover.html">Discover</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<main class="layout">
-<aside aria-live="polite" class="sidebar">
-<section class="visit-msg" id="visitMessage" tabindex="-1"></section>
-<section class="about-area">
-<h2>About the Area</h2>
-<p>The Tees Valley blends engineering heritage with modern culture—ideal for business, talent, and families.</p>
-</section>
-</aside>
-<section class="gallery">
-<!-- Cards injected by JS -->
-</section>
-</main>
-<footer class="site-footer">
-<p>© 2025 Tees Valley Chamber</p>
-</footer>
-<script defer="" src="scripts/discover.js"></script>
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="discover.html" aria-current="page">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Thornaby &amp; Stockton</h1>
+
+    <section class="visit-msg" aria-live="polite"></section>
+
+    <section id="discover-grid" class="discover-grid" aria-label="Points of Interest">
+      <noscript>Please enable JavaScript to see the discovery cards.</noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Olakunle Obademi • WDD 231</p>
+  </footer>
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
 </body>
 </html>
