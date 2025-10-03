@@ -1,0 +1,39 @@
+:root {
+  --forest: #1f6b4f;
+  --sunset: #ff8a3d;
+  --paper: #f7f9fb;
+  --ink: #1b1f23;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--paper);
+  color: var(--ink);
+  margin: 2rem auto;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--forest);
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 0.5rem;
+  border: 2px solid var(--sunset);
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--forest);
+  font-weight: 500;
+}
