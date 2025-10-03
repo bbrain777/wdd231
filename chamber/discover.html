@@ -10,23 +10,19 @@
 
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/chamber.css?v=7">
-  <link rel="stylesheet" href="styles/discover.css?v=7">
+  <link rel="stylesheet" href="styles/discover.css?v=8">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:url" content="https://bbrain777.github.io/wdd231/chamber/discover.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Discover Thornaby & Stockton | T&S Chamber">
   <meta property="og:description" content="Discover Stockton-on-Tees highlights: landmarks, parks, culture, venues and things to do for prospective chamber members and visitors.">
-  <meta property="og:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-discover.webp">
+  <meta property="og:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-cover.webp">
   <meta property="og:image:alt" content="Discover Stockton-on-Tees highlights collage">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Discover Thornaby & Stockton | T&S Chamber">
-  <meta name="twitter:description" content="Discover Stockton-on-Tees highlights: landmarks, parks, culture, venues and things to do for prospective chamber members and visitors.">
-  <meta name="twitter:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-discover.webp">
+  <meta name="twitter:image" content="https://bbrain777.github.io/wdd231/chamber/images/og-cover.webp">
 </head>
 
 <body>
@@ -44,8 +40,10 @@
   <main>
     <h1>Discover Thornaby &amp; Stockton</h1>
 
+    <!-- localStorage visit message -->
     <section class="visit-msg" aria-live="polite"></section>
 
+    <!-- Cards will be injected here -->
     <section id="discover-grid" class="discover-grid" aria-label="Points of Interest">
       <noscript>Please enable JavaScript to see the discovery cards.</noscript>
     </section>
@@ -55,7 +53,8 @@
     <p>© <span id="year"></span> Olakunle Obademi • WDD 231</p>
   </footer>
 
+  <!-- Keep these paths exactly as shown -->
   <script src="scripts/nav.js" defer></script>
-  <script src="scripts/discover.js" defer></script>
+  <script src="scripts/discover.js?v=8" defer></script>
 </body>
 </html>
