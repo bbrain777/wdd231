@@ -1,0 +1,8 @@
+body{color:#0f172a}
+.small{color:#1f2937}
+footer{background:#0b1533; color:#e5e7eb}
+footer a{color:#c7d2fe}
+a{color:#1d4ed8}
+:focus{outline:2px solid #93c5fd; outline-offset:2px}
+img{max-width:100%; height:auto}
+html, body{line-height:1.6}
