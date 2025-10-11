@@ -1,10 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Home page for ZYDI — youth education, mentorship, and digital skills.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';">
+  <meta name="author" content="Olakunle Obademi">
+  <meta property="og:title" content="ZYDI — Empowering Youth & Families">
+  <meta property="og:description" content="Zion Youth Development Initiative (ZYDI) helps young people learn, lead, and thrive through after-school support, mentoring, and digital skills across Teesside.">
+  <meta property="og:image" content="https://bbrain777.github.io/wdd231/week6/images/hero.svg">
+  <meta property="og:url" content="https://bbrain777.github.io/wdd231/week6/index.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/main.css">
   <title>Home • ZYDI</title>
@@ -20,7 +25,6 @@
       <nav id="primary-nav" aria-label="Main Navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="programs.html">Programs</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -31,12 +35,12 @@
   <main id="main" tabindex="-1">
     
 <section class="hero" aria-label="Welcome">
-  <div class="container wrap">
+  <div class="container hero wrap">
     <div>
       <h1>Empowering Youth. Strengthening Families.</h1>
       <p>We help young people learn, lead, and thrive through after-school support, mentoring, and digital skills training across Teesside.</p>
       <div class="cta">
-        <a class="btn primary" href="programs.html">Explore Programs</a>
+        <a class="btn primary" href="about.html">Explore Programs</a>
         <a class="btn" href="about.html">Meet Our Team</a>
       </div>
     </div>
@@ -111,12 +115,11 @@
       </section>
       <section>
         <h4>Contact</h4>
-        <p class="small">Email: <a href="mailto:hello@zionyouths.org">hello@zionyouths.org</a><br>Stockton-on-Tees, United Kingdom</p>
+        <p class="small">Email: <a href="contact.html" aria-label="Email hello@zionyouths.org">hello@zionyouths.org</a><br>Stockton-on-Tees, United Kingdom</p>
       </section>
     </div>
   </footer>
 
   <script src="scripts/main.js" defer></script>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
