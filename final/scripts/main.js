@@ -44,7 +44,7 @@ import {initToolbar, renderPrograms, mountModal} from './ui.js';
   }catch(e){ console.error(e); }
 })();
 
-// Contact: show URL params on success page
+// Contact success: show URL params
 (function contact(){
   const out = document.getElementById('formOut');
   if(!out) return;
