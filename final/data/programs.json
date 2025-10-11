@@ -1,0 +1,167 @@
+[
+  {
+    "id": "prog-1",
+    "title": "Program 1",
+    "category": "Mentoring",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 21,
+    "level": "Intermediate",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-2",
+    "title": "Program 2",
+    "category": "Wellbeing",
+    "meets": "Sat 10:00\u201312:00",
+    "location": "Teesside",
+    "spots": 22,
+    "level": "All",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-3",
+    "title": "Program 3",
+    "category": "Skills",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 23,
+    "level": "Beginner",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-4",
+    "title": "Program 4",
+    "category": "Mentoring",
+    "meets": "Sat 10:00\u201312:00",
+    "location": "Teesside",
+    "spots": 24,
+    "level": "Intermediate",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-5",
+    "title": "Program 5",
+    "category": "Wellbeing",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 25,
+    "level": "All",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-6",
+    "title": "Program 6",
+    "category": "Skills",
+    "meets": "Sat 10:00\u201312:00",
+    "location": "Teesside",
+    "spots": 26,
+    "level": "Beginner",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-7",
+    "title": "Program 7",
+    "category": "Mentoring",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 27,
+    "level": "Intermediate",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-8",
+    "title": "Program 8",
+    "category": "Wellbeing",
+    "meets": "Sat 10:00\u201312:00",
+    "location": "Teesside",
+    "spots": 28,
+    "level": "All",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-9",
+    "title": "Program 9",
+    "category": "Skills",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 29,
+    "level": "Beginner",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-10",
+    "title": "Program 10",
+    "category": "Mentoring",
+    "meets": "Sat 10:00\u201312:00",
+    "location": "Teesside",
+    "spots": 30,
+    "level": "Intermediate",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-11",
+    "title": "Program 11",
+    "category": "Wellbeing",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 31,
+    "level": "All",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-12",
+    "title": "Program 12",
+    "category": "Skills",
+    "meets": "Sat 10:00\u201312:00",
+    "location": "Teesside",
+    "spots": 32,
+    "level": "Beginner",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-13",
+    "title": "Program 13",
+    "category": "Mentoring",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 33,
+    "level": "Intermediate",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-14",
+    "title": "Program 14",
+    "category": "Wellbeing",
+    "meets": "Sat 10:00\u201312:00",
+    "location": "Teesside",
+    "spots": 34,
+    "level": "All",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  },
+  {
+    "id": "prog-15",
+    "title": "Program 15",
+    "category": "Skills",
+    "meets": "Mon\u2013Fri 3:30\u20135:30 PM",
+    "location": "Teesside",
+    "spots": 35,
+    "level": "Beginner",
+    "summary": "Hands-on activities that build confidence and community through projects and mentoring.",
+    "image": "images/card.svg"
+  }
+]
