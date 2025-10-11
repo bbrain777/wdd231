@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZYDI • Programs</title>
+  <meta name="description" content="Browse ZYDI programs across education, health, tech, and family support. Filter, search, and explore details." />
+  <meta name="author" content="Olakunle Obademi" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicon-512.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ZYDI • Programs">
+  <meta property="og:description" content="Browse ZYDI programs across education, health, tech, and family support. Filter, search, and explore details.">
+  <meta property="og:image" content="https://example.com/final/programs.htmlassets/icons/favicon-512.png">
+  <meta property="og:url" content="https://example.com/final/programs.html">
+  <meta name="theme-color" content="#103161">
+  <link rel="canonical" href="https://example.com/final/programs.html">
+  <link rel="preload" href="styles/base.css" as="style">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/print.css" media="print">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/icons/favicon-192.png" width="48" height="48" alt="ZYDI logo" />
+    <div class="brand-text">
+      <span class="org">Zion Youth Development Initiative</span>
+      <span class="tag">Create • Uplift • Empower</span>
+    </div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open site menu" aria-controls="site-nav" aria-expanded="false">☰</button>
+  <nav id="site-nav" class="site-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="programs.html">Programs</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main id="main" class="container">
+  <section>
+    <header class="section-header">
+      <h1>All Programs</h1>
+      <div class="filters">
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="Search programs…" aria-label="Search programs">
+        <label for="status">Status</label>
+        <select id="status">
+          <option value="all">All</option>
+          <option value="Planned">Planned</option>
+          <option value="Ongoing">Ongoing</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
+    </header>
+    <div id="programList" class="cards grid" aria-live="polite"></div>
+  </section>
+
+  <dialog id="programModal" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <article>
+      <header>
+        <h3 id="modalTitle">Program Title</h3>
+        <button id="closeModal" class="icon-btn" aria-label="Close modal">✕</button>
+      </header>
+      <div id="modalBody"><p id="modalDesc"></p></div>
+    </article>
+  </dialog>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Zion Youth Development Initiative (ZYDI). All rights reserved.</p>
+  <p class="social">
+    <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+    <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+    <a href="https://tiktok.com" aria-label="TikTok">TikTok</a>
+    <a href="https://youtube.com" aria-label="YouTube">YouTube</a>
+    <a href="https://x.com" aria-label="X/Twitter">X</a>
+  </p>
+  <p><a href="attributions.html">Attributions</a> • <a id="demoVideo" href="#" rel="noopener">Project Demo Video</a></p>
+</footer>
+
+</body>
+</html>

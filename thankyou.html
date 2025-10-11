@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | Zion Youth Development Initiative</title>
+  <meta name="description" content="Submission confirmation for your contact with Zion Youth Development Initiative.">
+  <meta name="author" content="Olakunle Obademi">
+  <meta property="og:title" content="Thank You | Zion Youth Development Initiative">
+  <meta property="og:description" content="Submission confirmation for your contact with Zion Youth Development Initiative.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/placeholder.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Zion Youth Development Initiative home">
+      <img src="images/placeholder.svg" alt="Zion Youth Development Initiative logo" width="80" height="45" loading="lazy">
+      <span>Zion Youth Development Initiative</span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">☰</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" data-link="home">Home</a></li>
+        <li><a href="programs.html" data-link="programs">Programs</a></li>
+        <li><a href="contact.html" data-link="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="controls">
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </header>
+  <main>
+
+<section class="page-header">
+  <h1>Thank You!</h1>
+  <p>We received your message. A confirmation has been generated below.</p>
+</section>
+
+<section class="receipt">
+  <dl id="receipt"></dl>
+  <a class="button" href="index.html">Return Home</a>
+</section>
+
+<script type="module" src="scripts/thankyou.js" defer></script>
+
+  </main>
+  <footer class="site-footer">
+    <p>© 2025 Zion Youth Development Initiative • Built for WDD231 Final</p>
+    <p><a href="attributions.html">Attributions</a> • <a href="https://youtube.com" target="_blank" rel="noopener">Project Demo Video</a></p>
+  </footer>
+
+  <dialog id="modal" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <h2 id="modal-title">Details</h2>
+      <div id="modal-body"></div>
+      <button id="modal-close" class="button" value="cancel">Close</button>
+    </div>
+  </dialog>
+  <script type="module" src="scripts/modal.js" defer></script>
+</body>
+</html>

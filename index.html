@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZYDI • Home</title>
+  <meta name="description" content="Zion Youth Development Initiative empowers youth and families through education, health, and opportunity." />
+  <meta name="author" content="Olakunle Obademi" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicon-512.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ZYDI • Home">
+  <meta property="og:description" content="Zion Youth Development Initiative empowers youth and families through education, health, and opportunity.">
+  <meta property="og:image" content="https://example.com/final/index.htmlassets/icons/favicon-512.png">
+  <meta property="og:url" content="https://example.com/final/index.html">
+  <meta name="theme-color" content="#103161">
+  <link rel="canonical" href="https://example.com/final/index.html">
+  <link rel="preload" href="styles/base.css" as="style">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/print.css" media="print">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/icons/favicon-192.png" width="48" height="48" alt="ZYDI logo" />
+    <div class="brand-text">
+      <span class="org">Zion Youth Development Initiative</span>
+      <span class="tag">Create • Uplift • Empower</span>
+    </div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open site menu" aria-controls="site-nav" aria-expanded="false">☰</button>
+  <nav id="site-nav" class="site-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="programs.html">Programs</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main id="main" class="container">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Creating Opportunity. Changing Futures.</h1>
+      <p>We build programs that help families learn, grow, and thrive—across the UK and Nigeria.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="programs.html">Explore Programs</a>
+        <a class="btn" href="contact.html">Volunteer / Donate</a>
+      </div>
+    </div>
+    <picture>
+      <img src="assets/images/favicon---copy-949157.webp" width="208" height="135" loading="lazy" alt="Community impact banner">
+    </picture>
+  </section>
+
+  <section>
+    <header class="section-header">
+      <h2>Featured Programs</h2>
+      <div class="filters">
+        <label for="category">Filter by category</label>
+        <select id="category"><option value="all">All</option></select>
+        <button id="toggleView" class="btn small" aria-pressed="false">Toggle Grid/List</button>
+      </div>
+    </header>
+    <div id="programGrid" class="cards grid" aria-live="polite"></div>
+  </section>
+
+  <dialog id="programModal" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <article>
+      <header>
+        <h3 id="modalTitle">Program Title</h3>
+        <button id="closeModal" class="icon-btn" aria-label="Close modal">✕</button>
+      </header>
+      <div id="modalBody"><p id="modalDesc"></p></div>
+    </article>
+  </dialog>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Zion Youth Development Initiative (ZYDI). All rights reserved.</p>
+  <p class="social">
+    <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+    <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+    <a href="https://tiktok.com" aria-label="TikTok">TikTok</a>
+    <a href="https://youtube.com" aria-label="YouTube">YouTube</a>
+    <a href="https://x.com" aria-label="X/Twitter">X</a>
+  </p>
+  <p><a href="attributions.html">Attributions</a> • <a id="demoVideo" href="#" rel="noopener">Project Demo Video</a></p>
+</footer>
+
+</body>
+</html>
