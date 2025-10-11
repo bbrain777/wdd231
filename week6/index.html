@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page for ZYDI — youth education, mentorship, and digital skills.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Home • ZYDI</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="ZYDI Home">
+        <img src="images/logo.svg" width="36" height="36" alt="ZYDI logo"><span>ZYDI</span>
+      </a>
+      <button class="mobile-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav id="primary-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    
+<section class="hero" aria-label="Welcome">
+  <div class="container wrap">
+    <div>
+      <h1>Empowering Youth. Strengthening Families.</h1>
+      <p>We help young people learn, lead, and thrive through after-school support, mentoring, and digital skills training across Teesside.</p>
+      <div class="cta">
+        <a class="btn primary" href="programs.html">Explore Programs</a>
+        <a class="btn" href="about.html">Meet Our Team</a>
+      </div>
+    </div>
+    <figure>
+      <img src="images/hero.svg" width="1600" height="900" fetchpriority="high" decoding="async" alt="Abstract hero illustration">
+    </figure>
+  </div>
+</section>
+
+<section class="container" aria-label="Highlights">
+  <div class="grid-2">
+    <article class="card">
+      <h3>What We Do</h3>
+      <p>From homework help to coding bootcamps, ZYDI provides safe spaces for young people to build confidence, skills, and community.</p>
+      <p class="small">Values: Inclusion • Learning • Service • Faith • Resilience</p>
+    </article>
+    <article class="card">
+      <h3>Why It Matters</h3>
+      <p>Families face real barriers—cost, access, and time. We lower those barriers with community-led programs that deliver measurable outcomes.</p>
+      <p class="small"><strong>Impact:</strong> rising grades, new tech skills, and stronger support networks.</p>
+    </article>
+  </div>
+</section>
+
+<section class="container" aria-label="Featured Programs">
+  <h2>Featured Programs</h2>
+  <div class="cards">
+    <article class="card">
+      <figure>
+        <img src="images/prog1.svg" width="800" height="500" loading="lazy" decoding="async" alt="After-School Club illustration">
+      </figure>
+      <h3>After-School Club</h3>
+      <p class="small"><span class="badge">Open</span> • Mon–Fri • Stockton</p>
+      <p>Daily homework help, coding basics, and creative arts.</p>
+    </article>
+    <article class="card">
+      <figure>
+        <img src="images/prog2.svg" width="800" height="500" loading="lazy" decoding="async" alt="Youth Mentors illustration">
+      </figure>
+      <h3>Youth Mentors</h3>
+      <p class="small"><span class="badge">Open</span> • Sat • Teesside</p>
+      <p>Peer mentoring and life-skills coaching with trained volunteers.</p>
+    </article>
+    <article class="card">
+      <figure>
+        <img src="images/prog3.svg" width="800" height="500" loading="lazy" decoding="async" alt="Digital Skills Bootcamp illustration">
+      </figure>
+      <h3>Digital Skills Bootcamp</h3>
+      <p class="small"><span class="badge">Waitlist</span> • Quarterly • Middlesbrough</p>
+      <p>Web, Python, and media production fundamentals in 8 weeks.</p>
+    </article>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footgrid">
+      <section>
+        <h3 style="margin-top:0">Zion Youth Development Initiative</h3>
+        <p class="small">Empowering youth and families across Teesside through education, mentorship, and digital skills.</p>
+        <p class="small">© <span id="year"></span> ZYDI • Registered in England</p>
+      </section>
+      <section>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contact</h4>
+        <p class="small">Email: <a href="mailto:hello@zionyouths.org">hello@zionyouths.org</a><br>Stockton-on-Tees, United Kingdom</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

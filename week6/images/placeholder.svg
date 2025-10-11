@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Zion Youth Initiative placeholder">
+  <rect width="800" height="450" fill="#e8f1ff"/>
+  <rect x="20" y="20" width="760" height="410" rx="16" fill="#ffffff" stroke="#99c2ff" stroke-width="4"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="28" font-family="Arial" fill="#2563eb">
+    Zion Youth Development Initiative
+  </text>
+</svg>

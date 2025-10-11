@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact page for ZYDI — youth education, mentorship, and digital skills.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Contact • ZYDI</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="ZYDI Home">
+        <img src="images/logo.svg" width="36" height="36" alt="ZYDI logo"><span>ZYDI</span>
+      </a>
+      <button class="mobile-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav id="primary-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    
+<section class="container" aria-label="Contact">
+  <h1>Contact Us</h1>
+  <div class="grid-2">
+    <form class="card form" onsubmit="event.preventDefault(); this.reset(); alert('Thanks! Your message has been recorded locally.');" aria-describedby="formhelp">
+      <p id="formhelp" class="small">We typically reply within 2–3 working days.</p>
+      <div class="grid-2" style="gap:1rem">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+      </div>
+      <div class="grid-2" style="gap:1rem">
+        <div>
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Select one…</option>
+            <option>General enquiry</option>
+            <option>Volunteer</option>
+            <option>Program registration</option>
+            <option>Partnership</option>
+          </select>
+        </div>
+        <div>
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+      <button class="btn primary" type="submit">Send message</button>
+    </form>
+    <aside class="card">
+      <h3>Visit</h3>
+      <p>Community Hub<br>Stockton-on-Tees, United Kingdom</p>
+      <h3>Email</h3>
+      <p><a href="mailto:hello@zionyouths.org">hello@zionyouths.org</a></p>
+      <h3>Social</h3>
+      <ul>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        <li><a href="#" aria-label="YouTube">YouTube</a></li>
+      </ul>
+      <p class="small">No data is sent to a server in this demo form.</p>
+    </aside>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footgrid">
+      <section>
+        <h3 style="margin-top:0">Zion Youth Development Initiative</h3>
+        <p class="small">Empowering youth and families across Teesside through education, mentorship, and digital skills.</p>
+        <p class="small">© <span id="year"></span> ZYDI • Registered in England</p>
+      </section>
+      <section>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contact</h4>
+        <p class="small">Email: <a href="mailto:hello@zionyouths.org">hello@zionyouths.org</a><br>Stockton-on-Tees, United Kingdom</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

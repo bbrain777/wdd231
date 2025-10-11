@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="t d">
+<title id="t">Youth Mentors illustration</title><desc id="d">Two abstract avatars and chat bubbles</desc>
+<rect width="800" height="500" fill="#ecfeff"/>
+<circle cx="250" cy="240" r="70" fill="#1d4ed8"/><circle cx="220" cy="220" r="14" fill="#fff"/><circle cx="280" cy="220" r="14" fill="#fff"/>
+<rect x="200" y="300" width="120" height="40" rx="20" fill="#0ea5e9"/>
+<circle cx="560" cy="240" r="70" fill="#10b981"/><circle cx="530" cy="220" r="14" fill="#fff"/><circle cx="590" cy="220" r="14" fill="#fff"/>
+<rect x="510" y="300" width="120" height="40" rx="20" fill="#34d399"/>
+<rect x="310" y="140" width="180" height="70" rx="12" fill="#1d4ed8" opacity=".15"/>
+<rect x="330" y="150" width="140" height="50" rx="10" fill="#fff"/>
+</svg>

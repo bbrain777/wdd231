@@ -1,0 +1,44 @@
+[
+  {
+    "id": "after-school-club",
+    "title": "After-School Club",
+    "img": "images/prog1.svg",
+    "summary": "Daily homework help, coding basics, and creative arts for ages 8–16.",
+    "outcomes": [
+      "Improved grades",
+      "Intro to coding",
+      "Confidence"
+    ],
+    "status": "Open",
+    "meets": "Mon–Fri, 3:30–5:30 PM",
+    "location": "Stockton-on-Tees"
+  },
+  {
+    "id": "youth-mentors",
+    "title": "Youth Mentors",
+    "img": "images/prog2.svg",
+    "summary": "Peer mentoring and life-skills coaching with trained volunteers.",
+    "outcomes": [
+      "Goals",
+      "Leadership",
+      "Accountability"
+    ],
+    "status": "Open",
+    "meets": "Sat, 10:00–12:00",
+    "location": "Teesside University"
+  },
+  {
+    "id": "digital-skills",
+    "title": "Digital Skills Bootcamp",
+    "img": "images/prog3.svg",
+    "summary": "Web, Python, and media production fundamentals in 8 weeks.",
+    "outcomes": [
+      "Portfolio",
+      "Career insight",
+      "Teamwork"
+    ],
+    "status": "Waitlist",
+    "meets": "Cohorts quarterly",
+    "location": "Middlesbrough Library"
+  }
+]
