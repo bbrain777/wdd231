@@ -18,7 +18,7 @@ async function loadTeam(){
       <div class="team-row gap-1">
         <figure class="avatar" aria-hidden="true">${initials}</figure>
         <div>
-          <h3 style="margin:.25rem 0">${m.name}</h3>
+          <h3 class="mt-025">${m.name}</h3>
           <p class="small"><span class="badge">${m.role}</span></p>
           <p>${m.bio}</p>
           <p class="small"><a href="mailto:${m.email}">${m.email}</a></p>
